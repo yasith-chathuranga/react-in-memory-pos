@@ -51,14 +51,14 @@ export function Dashboard() {
           <div className="p-5">
             <h1 className="text-2xl font-bold text-gray-800 mb-1">Item</h1>
 
-            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 ">
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-3">
               {items.map((item: Item) => (
                   <div className="bg-white shadow-md rounded-lg p-4 border border-gray-200">
                     <h2 className="text-lg font-semibold text-blue-600">
-                      {item.code}
+                      Item Code : {item.code}
                     </h2>
-                    <p className="text-gray-600">{item.itemName}</p>
-                    <p className="text-gray-600">{item.qty}</p>
+                    <p className="text-gray-600">Item Name : {item.itemName}</p>
+                    <p className="text-gray-600">Item Quantity : {item.qty}</p>
                   </div>
               ))}
             </div>
